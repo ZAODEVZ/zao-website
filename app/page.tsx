@@ -90,7 +90,7 @@ export default function Home() {
               Explore Community
             </Link>
             <a
-              href="https://farcaster.cast/zaal"
+              href="https://farcaster.xyz/~/channel/zao"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 rounded font-semibold border transition-all hover:scale-105"
@@ -109,7 +109,7 @@ export default function Home() {
       <footer className="py-8 px-4 sm:px-8 border-t text-center" style={{ borderColor: '#e0ddaa' }}>
         <div className="max-w-6xl mx-auto">
           <p style={{ color: '#9d9a7f' }}>
-            The ZAO - Building the future of music on web3
+            The ZAO - a web3 music community building tools for artists to own their work.
           </p>
         </div>
       </footer>
