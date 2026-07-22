@@ -54,7 +54,7 @@ export default function RootLayout({
                 'https://farcaster.xyz/~/channel/zao',
                 'https://paragraph.com/@thezao',
               ],
-              foundingDate: '2023',
+              foundingDate: '2024',
               knowsAbout: ['Web3', 'Music', 'Community', 'Incubator'],
               brand: {
                 '@type': 'Brand',
