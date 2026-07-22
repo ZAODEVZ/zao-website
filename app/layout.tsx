@@ -51,10 +51,10 @@ export default function RootLayout({
               url: 'https://thezao.com',
               description: 'A web3 music community and incubator for artists, creators, and builders.',
               sameAs: [
-                'https://farcaster.cast/zaal',
-                'https://twitter.com/bettercallzaal',
+                'https://farcaster.xyz/~/channel/zao',
+                'https://paragraph.com/@thezao',
               ],
-              foundingDate: '2024',
+              foundingDate: '2023',
               knowsAbout: ['Web3', 'Music', 'Community', 'Incubator'],
               brand: {
                 '@type': 'Brand',
