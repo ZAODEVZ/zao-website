@@ -6,9 +6,9 @@ See `CLAUDE.md` for the terminal's mandate + first tasks, `PLAN.md` for the phas
 
 ## Status
 
-- [ ] Next.js scaffold
+- [x] Next.js scaffold
 - [ ] Design system from zaobrand
-- [ ] Home (/)
+- [x] Home (/)
 - [ ] Community / Artists (/community)
 - [ ] Calendar (/calendar)
 - [ ] Leaderboard (/zao-leaderboard)
