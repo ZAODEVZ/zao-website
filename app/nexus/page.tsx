@@ -57,18 +57,46 @@ export default function Nexus() {
         </Container>
       </section>
 
-      {/* Onboarding - where do you want to go */}
+      {/* Onboarding - where do you want to go, step by step */}
       <Section heading="Where do you want to go?">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+        <p className="-mt-4 mb-8 max-w-2xl" style={{ color: 'var(--zao-cream-dim)' }}>
+          Pick what you came for. Each path is a real, do-it-now sequence.
+        </p>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
           {ONBOARDING.map((o) => (
-            <CardLink key={o.want} href={o.href} external={o.external}>
+            <div
+              key={o.want}
+              className="rounded p-5 sm:p-6"
+              style={{ border: '1px solid var(--zao-border)', backgroundColor: 'var(--zao-panel)' }}
+            >
               <h3 className="text-lg font-bold" style={{ color: 'var(--zao-cream)' }}>
                 {o.want}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed sm:text-base" style={{ color: 'var(--zao-cream-dim)' }}>
+              <p className="mt-1 text-sm" style={{ color: 'var(--zao-cream-dim)' }}>
                 {o.blurb}
               </p>
-            </CardLink>
+              <ol className="mt-4 space-y-2">
+                {o.steps.map((s, i) => (
+                  <li key={i} className="flex gap-3 text-sm sm:text-base">
+                    <span
+                      className="shrink-0 font-bold tabular-nums"
+                      style={{ color: 'var(--zao-cream-faint)' }}
+                    >
+                      {i + 1}.
+                    </span>
+                    {s.external ? (
+                      <a href={s.href} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--zao-cream-dim)', borderBottom: '1px solid var(--zao-border)' }}>
+                        {s.text}
+                      </a>
+                    ) : (
+                      <Link href={s.href} style={{ color: 'var(--zao-cream-dim)', borderBottom: '1px solid var(--zao-border)' }}>
+                        {s.text}
+                      </Link>
+                    )}
+                  </li>
+                ))}
+              </ol>
+            </div>
           ))}
         </div>
       </Section>
