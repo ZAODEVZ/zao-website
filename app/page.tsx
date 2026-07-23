@@ -9,8 +9,6 @@ import { StatTile } from '@/components/StatTile'
 import { NOTABLE_ARTISTS, ECOSYSTEM } from '@/lib/constants'
 import { getWaveWarZStats, fmtNum } from '@/lib/wavewarz'
 
-const WHITEPAPER_URL = 'https://zaofractal.vercel.app/whitepaper/zao-fractal-whitepaper'
-
 export default async function Home() {
   const ww = await getWaveWarZStats()
 
@@ -34,7 +32,7 @@ export default async function Home() {
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button href="/community">Explore the community</Button>
-              <Button href={WHITEPAPER_URL} variant="secondary" external>
+              <Button href="/papers" variant="secondary">
                 Read the whitepaper
               </Button>
             </div>
@@ -80,7 +78,7 @@ export default async function Home() {
             architecture in full.
           </p>
           <div className="flex flex-col gap-4 pt-2 sm:flex-row">
-            <Button href={WHITEPAPER_URL} variant="primary" external>
+            <Button href="/papers" variant="primary">
               Read the whitepaper
             </Button>
             <Button href="/zao-leaderboard" variant="secondary">
