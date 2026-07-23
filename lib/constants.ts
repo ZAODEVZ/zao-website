@@ -23,6 +23,7 @@ export const NOTABLE_ARTISTS = [
 ] as const
 
 export const NAV_LINKS = [
+  { label: 'Nexus', href: '/nexus' },
   { label: 'Community', href: '/community' },
   { label: 'Calendar', href: '/calendar' },
   { label: 'Leaderboard', href: '/zao-leaderboard' },
