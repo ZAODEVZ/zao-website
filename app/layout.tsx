@@ -7,25 +7,26 @@ export const metadata: Metadata = {
   description: 'A web3 music community and incubator for artists, creators, and builders.',
   keywords: ['web3', 'music', 'community', 'incubator', 'artists', 'creators'],
   openGraph: {
-    title: 'The ZAO',
-    description: 'Web3 music community and incubator',
+    title: 'The ZAO - a home where artists own their work',
+    description: 'A web3 music community and incubator. Live-traded music, governance you earn, built in the open on Farcaster and Base.',
     url: 'https://thezao.com',
     siteName: 'The ZAO',
     images: [
       {
-        url: 'https://thezao.com/og-image.png',
+        // Absolute vercel.app URL so the preview works while thezao.com still points to the old site (pre-DNS-switch).
+        url: 'https://zao-website.vercel.app/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'The ZAO',
+        alt: 'The ZAO - a home where artists own their work',
       },
     ],
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The ZAO',
-    description: 'Web3 music community and incubator',
-    images: ['https://thezao.com/og-image.png'],
+    title: 'The ZAO - a home where artists own their work',
+    description: 'A web3 music community and incubator. Live-traded music, governance you earn, built in the open.',
+    images: ['https://zao-website.vercel.app/og-image.png'],
   },
   icons: {
     icon: [{ url: '/favicon-32.png', sizes: '32x32', type: 'image/png' }],
