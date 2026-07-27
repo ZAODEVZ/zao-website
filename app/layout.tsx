@@ -4,11 +4,11 @@ import { Reveal } from '@/components/Reveal'
 
 export const metadata: Metadata = {
   title: 'The ZAO - Web3 Music Community & Incubator',
-  description: 'A web3 music community and incubator for artists, creators, and builders.',
+  description: 'A decentralized impact network for artists, creators, and builders.',
   keywords: ['web3', 'music', 'community', 'incubator', 'artists', 'creators'],
   openGraph: {
     title: 'The ZAO - a home where artists own their work',
-    description: 'A web3 music community and incubator. Live-traded music, governance you earn, built in the open on Farcaster and Base.',
+    description: 'A decentralized impact network. Live-traded music, governance you earn, built in the open on Farcaster and Base.',
     url: 'https://thezao.com',
     siteName: 'The ZAO',
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'The ZAO - a home where artists own their work',
-    description: 'A web3 music community and incubator. Live-traded music, governance you earn, built in the open.',
+    description: 'A decentralized impact network. Live-traded music, governance you earn, built in the open.',
     images: ['https://zao-website.vercel.app/og-image.png'],
   },
   icons: {
@@ -56,7 +56,7 @@ export default function RootLayout({
                   name: 'The ZAO',
                   url: 'https://thezao.com',
                   description:
-                    'A web3 music community and incubator - a home where members build, ship, and graduate real products together, and where artists own their margin, data, and IP.',
+                    'A decentralized impact network - a home where members build, ship, and graduate real products together, and where artists own their margin, data, and IP.',
                   foundingDate: '2024',
                   founder: { '@type': 'Person', name: 'Zaal Panthaki', alternateName: 'BetterCallZaal' },
                   sameAs: ['https://farcaster.xyz/~/channel/zao', 'https://paragraph.com/@thezao'],
@@ -85,7 +85,7 @@ export default function RootLayout({
                       name: 'What is The ZAO?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'The ZAO is a web3 music community and incubator, founded in 2024. It is a home where members build, ship, and graduate real products together, and where artists own their margin, data, and IP. It runs on Farcaster and Base.',
+                        text: 'The ZAO is a decentralized impact network, founded in 2024. It is a home where members build, ship, and graduate real products together, and where artists own their margin, data, and IP. It runs on Farcaster and Base.',
                       },
                     },
                     {
