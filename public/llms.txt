@@ -1,32 +1,30 @@
 # The ZAO
 
-> The ZAO is a web3 music community and incubator, founded in 2024 - a home where members build, ship, and graduate real products together, and where artists own their margin, data, and IP. Built on Farcaster and Base.
+> The ZAO (ZTalent Artist Organization) is a decentralized impact network focused on bringing the profit margin, data, and IP rights back to artists using emerging technology like blockchain and AI. Priority stack: music first, community second, technology third. Founded by Zaal Panthaki (BetterCallZaal).
 
 ## What it is
 
-- A community first: a home for artists, builders, and creators.
-- A place that ships: real products, built in public, that graduate to their own home when ready.
-- Web3-native and music-rooted. Not a platform play chasing scale, and not token-first - the community and the work come before any token.
+Not a record label or a "music community" - an impact network whose first artist domain is music. It returns three things to artists: profit margin, data, and IP rights. Technology is the means, not the headline. The acronym is ZTalent Artist Organization; what it is today is a decentralized impact network - both are correct.
 
-## What The ZAO builds
+## Governance - the Fractal and Respect
 
-- WaveWarZ - live-traded music battles on Solana with automated artist payouts.
+- Respect is the on-chain contribution currency: a soulbound OG ERC-20 plus a ZOR ERC-1155, both on Optimism.
+- A weekly Respect Game ranks contributions; rewards follow a Fibonacci curve. It has run 100+ unbroken weeks (since 2024-07-30).
+- On-chain execution via OREC (Optimistic Respect Execution Contract): a 72-hour voting window plus a 72-hour veto window.
+
+## Production lanes
+
+- WaveWarZ - live-traded music battles (Solana mainnet + Base testnet).
+- ZABAL Games - the 3-month build-a-thon for artists and builders.
+- The ZAO festivals - ZAOstock, ZAOville, ZAO-PALOOZA, ZAO-CHELLA.
 - COC Concertz - a recurring metaverse concert series.
-- ZAOstock - the ZAO festival, bridging a real place to an onchain community.
-- ZAO OS - the lab where ecosystem projects are built before they graduate.
-- ZABAL Games - the build-a-thon program for artists and builders.
+- ZAO OS - the lab/monorepo where new ZAO things prototype before they graduate to their own repo and domain.
 
-## How it works
+## How to explore
 
-Contribution is measured by Respect: an onchain reputation on Optimism, earned through weekly participation and peer ranking, not bought. Respect is non-transferable - it is a record of contribution, and it grows a member's voice in how The ZAO is run. The ecosystem token is ZABAL, on Base, distinct from Respect.
+- thezao.xyz and zaoos.com
+- Papers: thezao.xyz/papers (whitepaper, technical whitepaper, manifesto)
+- Farcaster: the /zao and /zabal channels
 
-## Founder
-
-Founded by Zaal Panthaki (BetterCallZaal). The origin: getting an artist heard, and letting them keep what they make.
-
-## Links
-
-- Website: https://thezao.com
-- Farcaster: https://farcaster.xyz/~/channel/zao
-- Newsletter: https://paragraph.com/@thezao
-- Calendar: https://lu.ma/zao
+---
+Source of truth: the ZAO ICM box (useicm.com). This file is generated from it - update the box first, then regenerate. See .claude/rules/icm-grounding.md.
