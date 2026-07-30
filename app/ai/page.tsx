@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer'
 import { ICM_BOXES, ICM_GROUPS, boxLlmUrl } from '@/lib/icm'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/ai' },
   title: 'AI Tools - The ZAO',
   description:
     'Grounded, AI-readable context on every part of the ZAO ecosystem. Each project has a permanent context box an AI can load to answer "what is X" correctly - no hallucination. Point any LLM or agent at these.',

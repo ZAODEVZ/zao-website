@@ -6,6 +6,7 @@ import { Button } from '@/components/Button'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/zao-leaderboard' },
   title: 'Leaderboard - The ZAO',
   description:
     'Contribution in The ZAO is measured by Respect - an onchain reputation earned through weekly participation, not bought. How the leaderboard works and how to climb it.',

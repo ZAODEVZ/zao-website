@@ -4,6 +4,7 @@ import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/api-docs' },
   title: 'API Documentation - The ZAO',
   description:
     'ZAO Public API - access ZAO ecosystem data: events, WaveWarZ battles, and community stats.',

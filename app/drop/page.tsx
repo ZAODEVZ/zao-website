@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer'
 import { DropClient } from './DropClient'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/drop' },
   title: 'Brand Drop - The ZAO',
   description: 'Drop brand assets from any device and organize them into folders.',
   robots: { index: false, follow: false },

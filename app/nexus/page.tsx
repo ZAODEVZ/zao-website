@@ -8,6 +8,7 @@ import { NEXUS, ONBOARDING } from '@/lib/nexus'
 import { MEMBERS } from '@/lib/members'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/nexus' },
   title: 'Nexus - The ZAO',
   description:
     'Every ZAO project in one place. Music, events, build tools, governance, and community - browse it all, or follow a path to what you came for.',

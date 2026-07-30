@@ -8,6 +8,7 @@ import { ArtistCard } from '@/components/ArtistCard'
 import { NOTABLE_ARTISTS } from '@/lib/constants'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/community' },
   title: 'Community - The ZAO',
   description:
     'The ZAO is a web3 music community and incubator - artists, builders, and creators who ship together and own their work. Meet some of the community and find the door in.',
