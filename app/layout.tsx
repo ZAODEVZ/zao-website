@@ -3,9 +3,14 @@ import './globals.css'
 import { Reveal } from '@/components/Reveal'
 
 export const metadata: Metadata = {
-  title: 'The ZAO - Web3 Music Community & Incubator',
-  description: 'A decentralized impact network for artists, creators, and builders.',
-  keywords: ['web3', 'music', 'community', 'incubator', 'artists', 'creators'],
+  // Copy is derived from the thezao ICM box (the source of truth) - "decentralized
+  // impact network", never "music community and incubator" (icm-grounding drift fix).
+  metadataBase: new URL('https://thezao.com'),
+  title: 'The ZAO - A Decentralized Impact Network for Artists',
+  description:
+    'The ZAO returns profit margin, data, and IP rights to artists. A decentralized impact network - music first, built in the open on Farcaster and Base.',
+  keywords: ['web3', 'music', 'artists', 'decentralized', 'impact network', 'creators'],
+  alternates: { canonical: '/' },
   openGraph: {
     title: 'The ZAO - a home where artists own their work',
     description: 'A decentralized impact network. Live-traded music, governance you earn, built in the open on Farcaster and Base.',

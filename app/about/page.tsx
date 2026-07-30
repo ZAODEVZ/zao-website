@@ -6,12 +6,13 @@ import { Button } from '@/components/Button'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about' },
   title: 'About - The ZAO',
   description:
-    'The ZAO is a web3 music community and incubator, founded in 2024 - a home where members build, ship, and graduate real products together, and where artists own their margin, data, and IP.',
+    'The ZAO (ZTalent Artist Organization) is a decentralized impact network founded in 2024 - a home where members build, ship, and graduate real products together, and where artists own their margin, data, and IP.',
   openGraph: {
     title: 'About - The ZAO',
-    description: 'A web3 music community and incubator. A home where members build, ship, and graduate real products together.',
+    description: 'A decentralized impact network. A home where members build, ship, and graduate real products together.',
     url: 'https://thezao.com/about',
     siteName: 'The ZAO',
     type: 'website',

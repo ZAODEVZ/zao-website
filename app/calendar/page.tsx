@@ -5,6 +5,7 @@ import { Button } from '@/components/Button'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/calendar' },
   title: 'Calendar - The ZAO',
   description:
     'What is happening in The ZAO - shows, sessions, and events. The community calendar, live on Luma.',

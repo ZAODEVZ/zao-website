@@ -7,6 +7,7 @@ import { Footer } from '@/components/Footer'
 import { PROFILE, TIERS, FEATURED_REPOS } from '@/lib/zaal'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/zaal' },
   title: 'Zaal Panthaki (BetterCallZaal) - The ZAO',
   description:
     'Zaal Panthaki - open-source builder, founder of The ZAO, co-founder of WaveWarZ. Book a Build Session and browse the open-source work. A ZAO profile.',

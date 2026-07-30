@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer'
 import { WHAT_IS, BOILERPLATE, GLOSSARY, VOICE, PALETTE, TYPE, PHOTOGRAPHY, HIERARCHY } from '@/lib/brand'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/brand' },
   title: 'Brand - The ZAO',
   description:
     'The ZAO brand reference: what it is, the boilerplate, the naming glossary, voice, palette, and sub-brand hierarchy. One place to read the whole brand.',

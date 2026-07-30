@@ -7,6 +7,7 @@ import { Footer } from '@/components/Footer'
 import { WHITEPAPER, chapterUrl } from '@/lib/papers'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/papers' },
   title: 'Papers - The ZAO',
   description:
     'The ZAO Fractal Whitepaper: earned governance, verified on-chain. Read the full paper and its twelve chapters - the theory, the mechanics, and the on-chain architecture behind a vote you earn, not buy.',

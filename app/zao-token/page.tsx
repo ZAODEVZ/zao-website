@@ -6,6 +6,7 @@ import { Button } from '@/components/Button'
 import { Footer } from '@/components/Footer'
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/zao-token' },
   title: 'Token - The ZAO',
   description:
     'The ZAO is community-first, not token-first. Standing is earned through Respect, not bought. How value and contribution work across the ecosystem.',
