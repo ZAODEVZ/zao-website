@@ -38,3 +38,6 @@ yarn-error.log*
 *~
 .gstack/
 .vercel
+
+tsconfig.tsbuildinfo
+*.tsbuildinfo
