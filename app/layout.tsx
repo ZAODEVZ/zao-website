@@ -98,7 +98,7 @@ export default function RootLayout({
                       name: 'What does The ZAO build?',
                       acceptedAnswer: {
                         '@type': 'Answer',
-                        text: 'The ZAO builds creator infrastructure in the open, including WaveWarZ (live-traded music battles on Solana), COC Concertz (metaverse concerts), ZAOstock (a festival), ZAO OS (the incubator lab), and ZABAL Games (a build-a-thon program).',
+                        text: 'The ZAO builds creator infrastructure in the open, including WaveWarZ (live-traded music battles on Solana), COC Concertz (metaverse concerts), ZAOstock (a festival), ZAO OS (the incubator lab), and ZABAL Gamez (a build-a-thon program).',
                       },
                     },
                     {

@@ -145,6 +145,6 @@ export const HIERARCHY = {
   ],
   beside: [
     { name: 'BetterCallZaal', note: "Zaal's personal/agency brand." },
-    { name: 'ZABAL / ZABAL Games', note: 'The build-a-thon program. Distinct from The ZAO, closely linked - keep them separate.' },
+    { name: 'ZABAL / ZABAL Gamez', note: 'The build-a-thon program. Distinct from The ZAO, closely linked - keep them separate.' },
   ],
 }

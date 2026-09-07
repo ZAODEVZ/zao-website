@@ -29,6 +29,7 @@ export const NAV_LINKS = [
   { label: 'Calendar', href: '/calendar' },
   { label: 'Leaderboard', href: '/zao-leaderboard' },
   { label: 'AI Tools', href: '/ai' },
+  { label: 'Links', href: '/links' },
   { label: 'About', href: '/about' },
   { label: 'Token', href: '/zao-token' },
 ] as const
@@ -56,7 +57,7 @@ export const ECOSYSTEM = [
     href: 'https://zaoos.com',
   },
   {
-    name: 'ZABAL Games',
+    name: 'ZABAL Gamez',
     blurb: 'The build-a-thon program - artists and builders shipping together.',
     href: 'https://zabalgamez.com',
   },

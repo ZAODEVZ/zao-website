@@ -25,7 +25,7 @@ export const ICM_BOXES: IcmBox[] = [
 
   // Products
   { slug: 'wavewarz', id: 'icm_RxT9r-_IjG1U9kxOniSzFQ', name: 'WaveWarZ', blurb: 'Live-traded music battles on Solana and Base.', group: 'product' },
-  { slug: 'zabalgamez', id: 'icm_6EcindcuwxlkMO7-lT83cQ', name: 'ZABAL Games', blurb: 'The 3-month build-a-thon for the ZAO builder community.', group: 'product' },
+  { slug: 'zabalgamez', id: 'icm_6EcindcuwxlkMO7-lT83cQ', name: 'ZABAL Gamez', blurb: 'The 3-month build-a-thon for the ZAO builder community.', group: 'product' },
   { slug: 'zao-festivals', id: 'icm_5JRCZhz7S4C3yo5c27ElNA', name: 'ZAO Festivals', blurb: 'The umbrella - ZAOstock, ZAOville, ZAO-PALOOZA, ZAO-CHELLA.', group: 'product' },
   { slug: 'zaostock', id: 'icm_lda7p0d9o_Ysg-SYZOIWjw', name: 'ZAOstock', blurb: 'The flagship in-person ZAO festival.', group: 'product' },
   { slug: 'sparkz', id: 'icm_Lr30gogWivu6uzio4l02MQ', name: 'Sparkz', blurb: 'Creator-coin launcher with a built-in AI advisor.', group: 'product' },

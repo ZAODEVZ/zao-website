@@ -76,7 +76,7 @@ export const NEXUS: { group: string; id: string; projects: NexusProject[] }[] = 
     id: 'build',
     projects: [
       { name: 'ZAO OS', blurb: 'The lab where ecosystem projects are built before they graduate.', href: 'https://zaoos.com', external: true },
-      { name: 'ZABAL Games', blurb: 'The build-a-thon program for artists and builders.', href: 'https://zabalgamez.com', external: true },
+      { name: 'ZABAL Gamez', blurb: 'The build-a-thon program for artists and builders.', href: 'https://zabalgamez.com', external: true },
       { name: 'Open source', blurb: 'Everything is built in the open. Browse the code.', href: 'https://github.com/bettercallzaal', external: true },
     ],
   },

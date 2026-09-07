@@ -15,7 +15,7 @@ Not a record label or a "music community" - an impact network whose first artist
 ## Production lanes
 
 - WaveWarZ - live-traded music battles (Solana mainnet + Base testnet).
-- ZABAL Games - the 3-month build-a-thon for artists and builders.
+- ZABAL Gamez - the 3-month build-a-thon for artists and builders.
 - The ZAO festivals - ZAOstock, ZAOville, ZAO-PALOOZA, ZAO-CHELLA.
 - COC Concertz - a recurring metaverse concert series.
 - ZAO OS - the lab/monorepo where new ZAO things prototype before they graduate to their own repo and domain.
