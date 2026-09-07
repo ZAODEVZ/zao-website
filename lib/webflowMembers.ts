@@ -9,6 +9,34 @@
 // Photos live in /public/members/<slug> and are served from this repo, so they
 // survive the Webflow plan lapsing.
 
+// LINK AUDIT - 2026-09-07. All 183 outbound links below were fetched. 170 returned
+// 200. The 13 that did not are listed here rather than silently deleted: these are
+// the members' own links, carried over verbatim, and they are already dead on the
+// live Webflow site today - this carries the defect across, it does not create it.
+// Removing someone's link is a decision about them, so it is Zaal's, not this file's.
+//
+// Dead, control-verified (a known-good URL on the same host returned 200 in the
+// same run, so the platform is not simply blocking us):
+//   youtube.com/@brookxkoda        brook-x-koda     404   (control @MrBeast = 200)
+//   youtube.com/@gesd1             gesd1            404
+//   youtube.com/@jangouuforever    jango-uu         404
+//   youtube.com/@jedxo             jedxo            404
+//   youtube.com/@LOMO_MUSIC        timi-wale-lomo   404
+//   x.com/pr0fitvsPr0phet          pr0f-t           404   (control x.com/TheZAODAO = 200)
+//   twitter.com/NessyTheRilla      nessytherilla    404
+//   twitter.com/jackxmller         jack-miller      404
+//   fractgram.web.app/NFT.NYC      attabotty        404
+//
+// Dead artist websites:
+//   wavyfans.net                   hurric4n3ike     NXDOMAIN - domain gone
+//   brookxkoda.com                 brook-x-koda     NXDOMAIN - domain gone
+//   maxwelladen.com                maxwell-aden     DNS resolves, connection fails
+//
+// UNMEASURED, not dead:
+//   facebook.com/profile.php?id=100086760753082   timi-wale-lomo
+//   Facebook returns 400 to this client for every URL tried, including
+//   facebook.com/zuck, so it cannot be checked from here. Do not treat as broken.
+
 export type WebflowMember = {
   slug: string
   name: string
@@ -169,7 +197,7 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       'I create to understand, to connect, and to offer others a sense of recognition and presence. If my art can make someone feel seen or inspired, I’ve done what I came here to do. 🌹',
     ],
     socials: [
-      { label: 'Instagram', url: 'https://www.instagram.com/eduardmsmr?igsh=dHBhZDQwcndtOXo3&amp;utm_source=qr' },
+      { label: 'Instagram', url: 'https://www.instagram.com/eduardmsmr?igsh=dHBhZDQwcndtOXo3&utm_source=qr' },
     ],
   },
   {
@@ -187,7 +215,7 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       'Through her music, Erin invites us all to join her on a healing journey where love is always the answer.',
     ],
     socials: [
-      { label: 'amazon.com', url: 'https://amazon.com/music/player/artists/B0BX4DQZTB/erin-hyvin?marketplaceId=ATVPDKIKX0DER&amp;musicTerritory=US&amp;ref=dm_sh_eZ8nF9ZzAyWdIlM16jCfBFqHz' },
+      { label: 'amazon.com', url: 'https://amazon.com/music/player/artists/B0BX4DQZTB/erin-hyvin?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_eZ8nF9ZzAyWdIlM16jCfBFqHz' },
       { label: 'Apple Music', url: 'https://music.apple.com/us/artist/erin-hyvin/1675229967' },
       { label: 'YouTube Music', url: 'https://music.youtube.com/channel/UCdKCJGc7_M1s72REmsjDd_A' },
       { label: 'Spotify', url: 'https://open.spotify.com/artist/6P33MqTKXCQXJm5jCz01tm?si=gOq6EpeQRJChv6KrxOu3gw' },
@@ -329,13 +357,13 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       'A true musical visionary, GRLKRASH’s journey is defined by a passion for music and an unwavering commitment to perfection, shaping the future of R&B.',
     ],
     socials: [
-      { label: 'amazon.com', url: 'https://amazon.com/music/player/artists/B0CSF2DBYF/grlkrash?marketplaceId=ATVPDKIKX0DER&amp;musicTerritory=US&amp;ref=dm_sh_xIGJ124d3YtaMfY2Ej1SqkNXB' },
+      { label: 'amazon.com', url: 'https://amazon.com/music/player/artists/B0CSF2DBYF/grlkrash?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_xIGJ124d3YtaMfY2Ej1SqkNXB' },
       { label: 'Apple Music', url: 'https://music.apple.com/us/artist/grlkrash/1633153693' },
       { label: 'YouTube Music', url: 'https://music.youtube.com/channel/UC0jBH1EwFncRcldGju_tAAA?si=TmCxfI3STTy52ML9' },
       { label: 'Spotify', url: 'https://open.spotify.com/artist/4hc1t3A4CTdvMyCGJdt5B8?si=cHmB0TVJRzuhlzs2BVy8cQ' },
       { label: 'X', url: 'https://twitter.com/grlkrash' },
       { label: 'Instagram', url: 'https://www.instagram.com/grlkrash/' },
-      { label: 'TikTok', url: 'https://www.tiktok.com/@grlkrash1?is_from_webapp=1&amp;sender_device=pc' },
+      { label: 'TikTok', url: 'https://www.tiktok.com/@grlkrash1?is_from_webapp=1&sender_device=pc' },
     ],
   },
   {
@@ -364,10 +392,10 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       'Yo, names Hurric4n3Ike, and I Give Em\' Wavez. Particularly I have been releasing new songs, instrumentals, music videos, podcasts, and even doing shows every single Wednesday under my \'WavyWednesday\' campaign for more than 5 years straight, and I have no plans of slowing down. My mission is to create and share music created at the natural 432 hz frequency that heals the planet, awakens souls, and helps others become the best version of themselves. By vibing with me you are directly supporting my mission of healing the planet and providing the world with a fresh sound of positive, natural, motivational, and sensational music. Stay Blessed and Stay Wavy Fam.',
     ],
     socials: [
-      { label: 'Amazon Music', url: 'https://music.amazon.com/artists/B07J1QDNWM/hurric4n3ike?marketplaceId=ATVPDKIKX0DER&amp;musicTerritory=US&amp;ref=dm_sh_Yjzxbya0yBnMRS4BS5TLiVFMw' },
+      { label: 'Amazon Music', url: 'https://music.amazon.com/artists/B07J1QDNWM/hurric4n3ike?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_Yjzxbya0yBnMRS4BS5TLiVFMw' },
       { label: 'Apple Music', url: 'https://music.apple.com/us/artist/hurric4n3ike/1267241414' },
       { label: 'YouTube Music', url: 'https://music.youtube.com/channel/UCQLMrAFJOQgk329A8xjny2w' },
-      { label: 'Spotify', url: 'https://open.spotify.com/artist/5x3pUgROCueytLsG0Xy35H?si=V928dXfKTK2yCk5Xlbo4kQ&amp;nd=1&amp;dlsi=267f8575305b482a' },
+      { label: 'Spotify', url: 'https://open.spotify.com/artist/5x3pUgROCueytLsG0Xy35H?si=V928dXfKTK2yCk5Xlbo4kQ&nd=1&dlsi=267f8575305b482a' },
       { label: 'X', url: 'https://twitter.com/hurric4n3ike?t=_My3sOy7lLlK_jaaLMeJig' },
       { label: 'Instagram', url: 'https://www.instagram.com/hurric4n3only?utm_source=qr' },
       { label: 'TikTok', url: 'https://www.tiktok.com/@hurric4n3ike' },
@@ -396,8 +424,8 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       'IzMpande is a soulful emcee with South African roots and a New York presence. Born in exile to freedom fighters. He spreads positivity through heartfelt music, captivates as an emcee, and he played a pivotal role in South African music.',
     ],
     socials: [
-      { label: 'Instagram', url: 'https://www.instagram.com/izmpande?igsh=NG9mYmk1N3ZlbTN6&amp;utm_source=qr' },
-      { label: 'TikTok', url: 'https://www.tiktok.com/@izmpande?_t=8p7NLMTF4uc&amp;_r=1' },
+      { label: 'Instagram', url: 'https://www.instagram.com/izmpande?igsh=NG9mYmk1N3ZlbTN6&utm_source=qr' },
+      { label: 'TikTok', url: 'https://www.tiktok.com/@izmpande?_t=8p7NLMTF4uc&_r=1' },
       { label: 'X', url: 'https://x.com/coachroots?s=21' },
       { label: 'YouTube', url: 'https://youtube.com/@izmpande?si=60guplZOGi6QFceV' },
     ],
@@ -417,9 +445,9 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
     ],
     socials: [
       { label: 'Apple Music', url: 'https://music.apple.com/us/artist/jack-miller/1505220626' },
-      { label: 'Spotify', url: 'https://open.spotify.com/artist/1L2dgYrQs4HZDHfYB2klTF?si=38ls6SlKQRyRqsEq72vkJg&amp;nd=1&amp;dlsi=cd89a047a5a74213' },
+      { label: 'Spotify', url: 'https://open.spotify.com/artist/1L2dgYrQs4HZDHfYB2klTF?si=38ls6SlKQRyRqsEq72vkJg&nd=1&dlsi=cd89a047a5a74213' },
       { label: 'Instagram', url: 'https://www.instagram.com/jackmxller' },
-      { label: 'TikTok', url: 'https://www.tiktok.com/@jackmxller?_t=8klOtU8Ruu6&amp;_r=1' },
+      { label: 'TikTok', url: 'https://www.tiktok.com/@jackmxller?_t=8klOtU8Ruu6&_r=1' },
       { label: 'X', url: 'https://www.twitter.com/jackxmller' },
     ],
   },
@@ -480,7 +508,7 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       '‍',
     ],
     socials: [
-      { label: 'Spotify', url: 'https://open.spotify.com/artist/5kUeVLOtLxWbz88hKQX5kE?si=9tCNGBKfRRSeBrwDMiFlbw&amp;utm_medium=share&amp;utm_source=linktree&amp;nd=1&amp;dlsi=2a8209382d434c20' },
+      { label: 'Spotify', url: 'https://open.spotify.com/artist/5kUeVLOtLxWbz88hKQX5kE?si=9tCNGBKfRRSeBrwDMiFlbw&utm_medium=share&utm_source=linktree&nd=1&dlsi=2a8209382d434c20' },
       { label: 'YouTube', url: 'https://www.youtube.com/@streetzishere4691' },
       { label: 'X', url: 'https://x.com/I_StreetzIsHERE' },
     ],
@@ -501,7 +529,7 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
     ],
     socials: [
       { label: 'Apple Music', url: 'https://music.apple.com/ng/artist/jed-xo/1652142873' },
-      { label: 'Spotify', url: 'https://open.spotify.com/artist/1Pt2likNBEJX171Q974e7F?si=HKnT2JxCRMqxIcVgcT5MzQ&amp;nd=1&amp;dlsi=e82c2a808ccc410f' },
+      { label: 'Spotify', url: 'https://open.spotify.com/artist/1Pt2likNBEJX171Q974e7F?si=HKnT2JxCRMqxIcVgcT5MzQ&nd=1&dlsi=e82c2a808ccc410f' },
       { label: 'Instagram', url: 'https://www.instagram.com/1jedxo/' },
       { label: 'TikTok', url: 'https://www.tiktok.com/@only1jedxo' },
       { label: 'YouTube', url: 'https://www.youtube.com/@jedxo' },
@@ -530,12 +558,12 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       'From love to heartbreak, and from fear to bravery - her songs express her story about overcoming health battles, committing to following her dreams, and all the mess in between.',
     ],
     socials: [
-      { label: 'amazon.com', url: 'https://amazon.com/music/player/artists/B0CVR61GNZ/losi?marketplaceId=ATVPDKIKX0DER&amp;musicTerritory=US&amp;ref=dm_sh_kGdxPSmC87hP4qgMyDfTq5vHr' },
+      { label: 'amazon.com', url: 'https://amazon.com/music/player/artists/B0CVR61GNZ/losi?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_kGdxPSmC87hP4qgMyDfTq5vHr' },
       { label: 'Apple Music', url: 'https://music.apple.com/us/artist/losi/1576087926' },
       { label: 'Spotify', url: 'https://open.spotify.com/artist/6M6yBsOJ4aYKwOuaKHh1JY?si=JiD6qnd4SzmpsnDRnjcKOw' },
       { label: 'X', url: 'https://twitter.com/iamlosi' },
       { label: 'Instagram', url: 'https://www.instagram.com/isabellalosada/' },
-      { label: 'TikTok', url: 'https://www.tiktok.com/@iamlosi____?is_from_webapp=1&amp;sender_device=pc' },
+      { label: 'TikTok', url: 'https://www.tiktok.com/@iamlosi____?is_from_webapp=1&sender_device=pc' },
     ],
   },
   {
@@ -673,7 +701,7 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       'His goal is to transparently share his story of overcoming numerous obstacles to continue following his dreams, finding himself, staying true, and honest to who he is.',
     ],
     socials: [
-      { label: 'amazon.com', url: 'https://amazon.com/music/player/artists/B0BZKG2RKX/pr0f-t?marketplaceId=ATVPDKIKX0DER&amp;musicTerritory=US&amp;ref=dm_sh_8Vj9vLCSUprq3teMujm2hW0YX' },
+      { label: 'amazon.com', url: 'https://amazon.com/music/player/artists/B0BZKG2RKX/pr0f-t?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_8Vj9vLCSUprq3teMujm2hW0YX' },
       { label: 'Apple Music', url: 'https://music.apple.com/us/artist/pr0f-t/1678899404' },
       { label: 'YouTube Music', url: 'https://music.youtube.com/channel/UCT1oqDZir9G_I0ODBEoVJaA' },
       { label: 'Spotify', url: 'https://open.spotify.com/artist/3AonMoMGgONwANuv7Hoqhn?si=xbk896yMTNuoHokSryXZ5w' },
@@ -710,7 +738,7 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
     ],
     socials: [
       { label: 'Apple Music', url: 'https://music.apple.com/us/artist/songs-of-eden/1377074572' },
-      { label: 'Spotify', url: 'https://open.spotify.com/artist/65FgZ9ojgAbjhpXy8fL6vt?si=a5l4lxUJTQOCPahAUOd4DA&amp;nd=1&amp;dlsi=e041b3acd5254c09' },
+      { label: 'Spotify', url: 'https://open.spotify.com/artist/65FgZ9ojgAbjhpXy8fL6vt?si=a5l4lxUJTQOCPahAUOd4DA&nd=1&dlsi=e041b3acd5254c09' },
       { label: 'Instagram', url: 'https://www.instagram.com/songsofeden/' },
       { label: 'YouTube', url: 'https://www.youtube.com/songsofedenMusic' },
       { label: 'X', url: 'https://x.com/SongsOfEden' },
@@ -736,7 +764,7 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       'Drawing inspiration from artists like Adele, Tems, Sam Smith, and John Legend, she blends pop and R&B influences into a sound that feels both soulful and uniquely her own turning real feelings into songs that connect deeply with listeners.',
     ],
     socials: [
-      { label: 'Spotify', url: 'https://open.spotify.com/artist/79iM2qY3vQ8dMhPRkcFoG8?si=KPl1Fyz-Sb-8tHTRTiAjXw&amp;nd=1&amp;dlsi=7f477ada2f6b455e' },
+      { label: 'Spotify', url: 'https://open.spotify.com/artist/79iM2qY3vQ8dMhPRkcFoG8?si=KPl1Fyz-Sb-8tHTRTiAjXw&nd=1&dlsi=7f477ada2f6b455e' },
       { label: 'X', url: 'https://x.com/Tabbyomodudu' },
     ],
   },
@@ -785,7 +813,7 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
     slug: 'timi-wale-lomo',
     name: 'Timi Wale Lomo',
     category: 'Producer, Songwriter, PerformingArtist',
-    website: 'https://www.facebook.com/profile.php?id=100086760753082&amp;mibextid=LQQJ4d',
+    website: 'https://www.facebook.com/profile.php?id=100086760753082&mibextid=LQQJ4d',
     photo: '/members/timi-wale-lomo.png',
     bio: [
       'Babatunde Bello who is popularly known by his stage name Timi Wale Lomo,was born on 31st May 2000 to the family of Mr and Mrs Bello.He is an Ogun state indigent,but based in Kaduna,were he is most famous.His mother Mrs Kemi Ayeni hails from Kogi state,she is a trader and businesswoman.The singer stated that his family is his biggest motivation.His dad Mr Bello is from Ogun state,he is a civil servant and Uber driverHe is the first child in the family of 5.He has lived all his life in Kaduna state,including his primary and secondary education.Timi Wale Lomo started making music at a very tender age,by performing at occasions and events. He is very talented and gifted,a singer that can bump on any beat given to him,which earns him the nickname Afroboy.He has a good number of songs to his credit, with the most prominent of them being his 2020 hit song which he titled’Kaduna’.Some of his song releases include, Angelina,Kaduna,dance,Marlians boyz,omotena,Ololufe mi,amongst other unreleased project.The talented young singer is very good in singing switching between the Yoruba language with the English language.His talent and musical prowess speaks for him through his songs.The ‘Kaduna’ crooner is working on his upcoming Extended project EP,which is expected to be released',
