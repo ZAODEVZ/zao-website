@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { MEMBERS } from '@/lib/members'
-import { WEBFLOW_MEMBERS } from '@/lib/webflowMembers'
+import { WEBFLOW_MEMBERS, ARTIST_CATEGORIES } from '@/lib/webflowMembers'
 
 const BASE = 'https://thezao.com'
 
@@ -37,5 +37,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }))
-  return [...core, ...members, ...community]
+  // The Webflow artist-category paths, rebuilt so inbound links keep resolving.
+  const categories = ARTIST_CATEGORIES.map((c) => ({
+    url: `${BASE}/artist-category/${c.slug}`,
+    changeFrequency: 'monthly' as const,
+    priority: 0.5,
+  }))
+  return [...core, ...members, ...community, ...categories]
 }

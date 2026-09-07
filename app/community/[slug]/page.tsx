@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation'
 import { Nav } from '@/components/Nav'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
-import { WEBFLOW_MEMBERS } from '@/lib/webflowMembers'
+import { WEBFLOW_MEMBERS, categorySlug } from '@/lib/webflowMembers'
 
 // Only the 43 carried-over profiles render; everything else 404s.
 export const dynamicParams = false
@@ -78,12 +78,13 @@ export default async function CommunityProfile({
 
             <div className="space-y-4">
               {m.category && (
-                <p
-                  className="text-xs font-medium uppercase tracking-[0.18em]"
+                <Link
+                  href={`/artist-category/${categorySlug(m.category)}`}
+                  className="inline-block text-xs font-medium uppercase tracking-[0.18em] transition-opacity hover:opacity-70"
                   style={{ color: 'var(--zao-cream)' }}
                 >
                   {m.category}
-                </p>
+                </Link>
               )}
               <h1 className="text-4xl font-bold leading-tight sm:text-6xl">{m.name}</h1>
               {m.website && (
