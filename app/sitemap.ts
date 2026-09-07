@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { MEMBERS } from '@/lib/members'
+import { WEBFLOW_MEMBERS } from '@/lib/webflowMembers'
 
 const BASE = 'https://thezao.com'
 
@@ -28,5 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }))
-  return [...core, ...members]
+  // The 43 profiles carried over from the Webflow site, at their original paths
+  // so inbound links and search results keep resolving after the switch.
+  const community = WEBFLOW_MEMBERS.map((m) => ({
+    url: `${BASE}/community/${m.slug}`,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }))
+  return [...core, ...members, ...community]
 }
