@@ -4,8 +4,8 @@ import { Section } from '@/components/Section'
 import { Container } from '@/components/Container'
 import { Button } from '@/components/Button'
 import { Footer } from '@/components/Footer'
-import { ArtistCard } from '@/components/ArtistCard'
-import { NOTABLE_ARTISTS } from '@/lib/constants'
+import { MemberCard } from '@/components/MemberCard'
+import { WEBFLOW_MEMBERS } from '@/lib/webflowMembers'
 
 export const metadata: Metadata = {
   alternates: { canonical: '/community' },
@@ -47,13 +47,14 @@ export default function Community() {
         </Container>
       </section>
 
-      <Section heading="Some of the artists & builders">
+      <Section heading="The artists &amp; builders">
         <p className="section-sub -mt-4 mb-8" style={{ color: 'var(--zao-cream-dim)' }}>
-          A sample of the people building here. The community is bigger than any one list.
+          {WEBFLOW_MEMBERS.length} members of The ZAO, in their own words. The community is
+          bigger than any one list.
         </p>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6 lg:grid-cols-4">
-          {NOTABLE_ARTISTS.map((artist) => (
-            <ArtistCard key={artist} name={artist} />
+          {WEBFLOW_MEMBERS.map((member) => (
+            <MemberCard key={member.slug} member={member} />
           ))}
         </div>
       </Section>
