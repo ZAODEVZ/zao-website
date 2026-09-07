@@ -818,3 +818,38 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
 export function getMember(slug: string) {
   return WEBFLOW_MEMBERS.find((m) => m.slug === slug)
 }
+
+// --- Artist categories -------------------------------------------------------
+// The Webflow site had a page per artist category at /artist-category/<slug>.
+// Those URLs are live today and would 404 after the DNS switch, so they are
+// rebuilt here. The slugs below are derived from the category text by the same
+// rule Webflow used, and they reproduce its six slugs exactly.
+//
+// The rebuild is deliberately better than the original: Webflow's category pages
+// rendered a truncated collection list (its /artist-category/musician showed 4 of
+// the 36 musicians). These list every member in the category.
+
+export function categorySlug(category: string): string {
+  return category
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+}
+
+export type ArtistCategory = { slug: string; name: string; members: WebflowMember[] }
+
+export const ARTIST_CATEGORIES: ArtistCategory[] = (() => {
+  const bySlug = new Map<string, ArtistCategory>()
+  for (const m of WEBFLOW_MEMBERS) {
+    if (!m.category) continue // makk-jay and phantom-mode have no category in the source
+    const slug = categorySlug(m.category)
+    const existing = bySlug.get(slug)
+    if (existing) existing.members.push(m)
+    else bySlug.set(slug, { slug, name: m.category, members: [m] })
+  }
+  return [...bySlug.values()].sort((a, b) => b.members.length - a.members.length)
+})()
+
+export function getCategory(slug: string) {
+  return ARTIST_CATEGORIES.find((c) => c.slug === slug)
+}
