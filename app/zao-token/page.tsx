@@ -64,7 +64,7 @@ export default function Token() {
         <div className="max-w-2xl space-y-4">
           <p style={{ color: 'var(--zao-cream-dim)' }}>
             The ecosystem token is ZABAL, on Base - closely linked to The ZAO and tied to the
-            ZABAL Games builder program. It is distinct from Respect: Respect is earned
+            ZABAL Gamez builder program. It is distinct from Respect: Respect is earned
             reputation inside the community, while ZABAL is the tradable ecosystem token.
           </p>
         </div>

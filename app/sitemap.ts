@@ -16,6 +16,7 @@ const ROUTES = [
   '/about',
   '/zao-token',
   '/zaal',
+  '/links',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
