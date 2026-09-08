@@ -65,7 +65,6 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       '‍',
     ],
     socials: [
-      { label: 'fractgram.web.app', url: 'https://fractgram.web.app/NFT.NYC' },
       { label: 'X', url: 'https://twitter.com/AttaBotty' },
       { label: 'Instagram', url: 'https://www.instagram.com/attabotty/' },
       { label: 'TikTok', url: 'https://www.tiktok.com/@attabotty' },
@@ -87,7 +86,7 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
     slug: 'brook-x-koda',
     name: 'Brook X Koda',
     category: 'Musician',
-    website: 'https://brookxkoda.com/',
+    website: null,
     photo: '/members/brook-x-koda.png',
     bio: [
       'Meet Brook x Koda, real twin sisters whose journey from Chicago to Miami\'s music scene is nothing short of magical. Their musical roots trace back to childhood R&B sessions curated by their mom, shaping a style that fuses pop, hip-hop, alternative, and R&B. Smooth melodies and lyricism are the building blocks of their signature sound.',
@@ -99,7 +98,6 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       { label: 'Apple Music', url: 'https://music.apple.com/us/artist/brook-x-koda/1501502453' },
       { label: 'YouTube Music', url: 'https://music.youtube.com/channel/UCMzEwDFWdaVkI_MhR4IUurA' },
       { label: 'TikTok', url: 'https://www.tiktok.com/@brookxkodaa' },
-      { label: 'YouTube', url: 'https://www.youtube.com/@brookxkoda' },
     ],
   },
   {
@@ -294,7 +292,6 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
     ],
     socials: [
       { label: 'TikTok', url: 'http://tiktok.com/@gesd01100' },
-      { label: 'YouTube', url: 'https://www.youtube.com/@gesd1' },
       { label: 'X', url: 'https://x.com/Gesd01' },
     ],
   },
@@ -386,7 +383,7 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
     slug: 'hurric4n3ike',
     name: 'Hurric4n3Ike',
     category: 'Musician',
-    website: 'http://wavyfans.net/',
+    website: null,
     photo: '/members/hurric4n3ike.png',
     bio: [
       'Yo, names Hurric4n3Ike, and I Give Em\' Wavez. Particularly I have been releasing new songs, instrumentals, music videos, podcasts, and even doing shows every single Wednesday under my \'WavyWednesday\' campaign for more than 5 years straight, and I have no plans of slowing down. My mission is to create and share music created at the natural 432 hz frequency that heals the planet, awakens souls, and helps others become the best version of themselves. By vibing with me you are directly supporting my mission of healing the planet and providing the world with a fresh sound of positive, natural, motivational, and sensational music. Stay Blessed and Stay Wavy Fam.',
@@ -448,7 +445,6 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       { label: 'Spotify', url: 'https://open.spotify.com/artist/1L2dgYrQs4HZDHfYB2klTF?si=38ls6SlKQRyRqsEq72vkJg&nd=1&dlsi=cd89a047a5a74213' },
       { label: 'Instagram', url: 'https://www.instagram.com/jackmxller' },
       { label: 'TikTok', url: 'https://www.tiktok.com/@jackmxller?_t=8klOtU8Ruu6&_r=1' },
-      { label: 'X', url: 'https://www.twitter.com/jackxmller' },
     ],
   },
   {
@@ -493,7 +489,6 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       { label: 'X', url: 'https://twitter.com/jangouuforever' },
       { label: 'Instagram', url: 'https://www.instagram.com/jangouuforever/?hl=en' },
       { label: 'TikTok', url: 'https://www.tiktok.com/@jangouuforever' },
-      { label: 'YouTube', url: 'https://www.youtube.com/@jangouuforever' },
     ],
   },
   {
@@ -532,7 +527,6 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       { label: 'Spotify', url: 'https://open.spotify.com/artist/1Pt2likNBEJX171Q974e7F?si=HKnT2JxCRMqxIcVgcT5MzQ&nd=1&dlsi=e82c2a808ccc410f' },
       { label: 'Instagram', url: 'https://www.instagram.com/1jedxo/' },
       { label: 'TikTok', url: 'https://www.tiktok.com/@only1jedxo' },
-      { label: 'YouTube', url: 'https://www.youtube.com/@jedxo' },
       { label: 'X', url: 'https://x.com/1jedxo' },
     ],
   },
@@ -606,7 +600,7 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
     slug: 'maxwell-aden',
     name: 'Maxwell Aden',
     category: 'Musician',
-    website: 'https://maxwelladen.com/',
+    website: null,
     photo: '/members/maxwell-aden.png',
     bio: [
       'A few years ago I should have died. My heart almost failed. Weeks later, RAab Stevenson (of Justin Timberlake, Rihanna, SZA, Chris Stapleton, Doja Cat) discovered my music and over night I was on a flight to L.A. I went from being a broke kid working 80-100 hrs/wk for years living in my buddy’s apartment and making music - to giving up a life changing corporate offer just to risk it all again. Fast forward a few years and I’ve gone viral, turned down $1M record deals, and have 10M plays by myself!',
@@ -671,7 +665,6 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       { label: 'Apple Music', url: 'https://music.apple.com/us/artist/nessy-the-rilla/1385346924' },
       { label: 'YouTube Music', url: 'https://music.youtube.com/channel/UChDrR4Leeva6AoRxcVK3MEQ' },
       { label: 'Spotify', url: 'https://open.spotify.com/artist/7hqCuQulEdCMUye8L2TYX4?si=mZqxS0DVR96LL-rTVcK10g' },
-      { label: 'X', url: 'https://twitter.com/NessyTheRilla' },
       { label: 'Instagram', url: 'https://www.instagram.com/nessytherilla/?hl=en' },
       { label: 'TikTok', url: 'https://www.tiktok.com/@nessytherilla?lang=en' },
       { label: 'YouTube', url: 'https://www.youtube.com/channel/UCv2Ks5HH5a0ag_JDFi_ts4g' },
@@ -706,7 +699,6 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
       { label: 'YouTube Music', url: 'https://music.youtube.com/channel/UCT1oqDZir9G_I0ODBEoVJaA' },
       { label: 'Spotify', url: 'https://open.spotify.com/artist/3AonMoMGgONwANuv7Hoqhn?si=xbk896yMTNuoHokSryXZ5w' },
       { label: 'Instagram', url: 'https://www.instagram.com/profitvsprophet/' },
-      { label: 'X', url: 'https://x.com/pr0fitvsPr0phet' },
     ],
   },
   {
@@ -820,7 +812,6 @@ export const WEBFLOW_MEMBERS: WebflowMember[] = [
     ],
     socials: [
       { label: 'Instagram', url: 'https://www.instagram.com/timi_wale_lomo?utm_source=qr' },
-      { label: 'YouTube', url: 'https://www.youtube.com/@LOMO_MUSIC' },
     ],
   },
   {
