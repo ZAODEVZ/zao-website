@@ -31,6 +31,7 @@ export async function generateMetadata({
       url: `https://thezao.com/${m.handle}`,
       siteName: 'The ZAO',
       type: 'profile',
+    images: ['https://zao-website.vercel.app/og-image.png'],
     },
   }
 }

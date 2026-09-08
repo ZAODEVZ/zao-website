@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     url: 'https://thezao.com/calendar',
     siteName: 'The ZAO',
     type: 'website',
+    images: ['https://zao-website.vercel.app/og-image.png'],
   },
 }
 
