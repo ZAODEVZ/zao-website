@@ -65,6 +65,26 @@ export default function About() {
         </div>
       </Section>
 
+      <Section heading="What that looks like in practice">
+        {/* Carried verbatim from the Webflow site this replaces. The specific
+            numbers are the point - do not generalise them into "many artists". */}
+        <div className="max-w-2xl space-y-4">
+          <p style={{ color: 'var(--zao-cream-dim)' }}>
+            <strong style={{ color: 'var(--zao-cream)' }}>ZAO-PALOOZA</strong>, held during
+            NFT NYC, featured{' '}
+            <strong style={{ color: 'var(--zao-cream)' }}>
+              12 artists, 6 of whom were new to Web 3
+            </strong>{' '}
+            - a groundbreaking introduction to decentralized technology in music.
+          </p>
+          <p style={{ color: 'var(--zao-cream-dim)' }}>
+            Half the bill had never touched the technology before they played. That ratio is
+            the work: not an audience discovering crypto, but artists onboarded by doing a
+            show.
+          </p>
+        </div>
+      </Section>
+
       <Section heading="How it started">
         <div className="max-w-2xl space-y-4">
           <p style={{ color: 'var(--zao-cream-dim)' }}>

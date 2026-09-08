@@ -24,7 +24,7 @@ export const LINK_GROUPS: LinkGroup[] = [
     note: 'The network itself, and how it governs.',
     links: [
       { name: 'thezao.com', blurb: 'The main site - who we are and how to find the door in.', href: 'https://thezao.com' },
-      { name: 'ZAO Verse', blurb: 'Governance: proposals, Respect and the onchain layer.', href: 'https://thezao.xyz' },
+      { name: 'The ZAO Co-Works', blurb: 'The coworking product - a separate site from this one, not a section of it.', href: 'https://thezao.xyz' },
       { name: 'Hats tree', blurb: 'The live role tree - who holds what, readable by anyone.', href: 'https://hats.thezao.com', offsite: true },
     ],
   },
