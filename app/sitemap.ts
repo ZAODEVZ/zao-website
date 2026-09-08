@@ -4,7 +4,9 @@ import { WEBFLOW_MEMBERS, ARTIST_CATEGORIES } from '@/lib/webflowMembers'
 
 const BASE = 'https://thezao.com'
 
-// Public, indexable routes. /drop is intentionally excluded (noindexed ops tool).
+// Public, indexable routes. Every route here must be reachable and indexable.
+// /drop is intentionally excluded - it is a noindexed ops tool, verified as
+// carrying a noindex tag rather than assumed.
 const ROUTES = [
   '',
   '/nexus',
@@ -17,6 +19,8 @@ const ROUTES = [
   '/zao-token',
   '/zaal',
   '/links',
+  '/ai',
+  '/api-docs',
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
