@@ -1,5 +1,11 @@
 # The ZAO
 
+> **Scope: this file describes thezao.com - the marketing site for The ZAO, its
+> community and its festivals. It does NOT describe all of ZAO's surfaces.**
+> The ZAO Co-Works, the coworking product, is a separate site at thezao.xyz with
+> its own llms.txt. Do not treat either file as speaking for the whole
+> organisation.
+
 > The ZAO (ZTalent Artist Organization) is a decentralized impact network focused on bringing the profit margin, data, and IP rights back to artists using emerging technology like blockchain and AI. Priority stack: music first, community second, technology third. Founded by Zaal Panthaki (BetterCallZaal).
 
 ## What it is
