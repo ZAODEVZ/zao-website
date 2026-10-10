@@ -3,34 +3,35 @@
 
 export const WHAT_IS = {
   oneLine:
-    'The ZAO is a web3 music community and incubator - a home where members build, ship, and graduate real products together.',
+    'The ZAO (ZTalent Artist Organization) is a decentralized impact network - a home where members build, ship, and graduate real products together, and where artists keep their margin, their data, and their IP.',
   longer:
     'It started as a gated Farcaster social client for its own community and grew into a lab. Members prototype ecosystem projects side by side; when a project is ready for production and new users, it graduates to its own repo and home. The community operates like a label and an incubator at once.',
   is: [
     'A community first - a home for a specific group of people, member-owned in spirit.',
     'A place that ships - real products, built in public, that leave the nest when ready.',
-    'Web3-native and music-rooted, but not limited to either.',
+    'Music first, community second, technology third - the technology is the means, not the headline.',
   ],
   isNot: [
     'Not a platform play chasing generic scale.',
     'Not a token-first project - the community and the work come before any token.',
     'Not a single app - it is an umbrella over many builds.',
+    'Not a record label and not a music community - an impact network whose first artist domain is music.',
   ],
 }
 
 export const BOILERPLATE = {
-  oneLiner: 'The ZAO is a web3 music community and incubator where artists own their work.',
+  oneLiner: 'The ZAO is a decentralized impact network where artists own their work.',
   short:
-    'The ZAO is a web3 music community and incubator, founded in 2024. It is a home where members build, ship, and graduate real products together - and where artists keep their margin, their data, and their IP. Built on Farcaster and Base.',
+    'The ZAO (ZTalent Artist Organization) is a decentralized impact network, founded in 2024. It is a home where members build, ship, and graduate real products together - and where artists keep their margin, their data, and their IP. Built on Farcaster and Base.',
   medium:
-    'The ZAO is a web3 music community and incubator, founded in 2024. It started as a gated social client for its own community and grew into a lab: members prototype projects side by side, and when something is ready it graduates to its own home. It runs like a label and an incubator at once. Everything it builds - from on-chain music battles to festivals - serves one idea: artists owning their work.',
+    'The ZAO (ZTalent Artist Organization) is a decentralized impact network, founded in 2024. It started as a gated social client for its own community and grew into a lab: members prototype projects side by side, and when something is ready it graduates to its own home. It runs like a label and an incubator at once. Everything it builds - from on-chain music battles to festivals - serves one idea: artists owning their work.',
   taglines: [
     'A home where artists own their work.',
     'Build, ship, graduate - together.',
     'Music, owned by the people who make it.',
   ],
   bios: [
-    'The ZAO - a web3 music community and incubator. Artists own their work. Built on Farcaster + Base.',
+    'The ZAO - a decentralized impact network. Artists own their work. Built on Farcaster + Base.',
     'Building the home where artists keep their margin, data, and IP.',
   ],
 }

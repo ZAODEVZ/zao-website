@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/community' },
   title: 'Community - The ZAO',
   description:
-    'The ZAO is a web3 music community and incubator - artists, builders, and creators who ship together and own their work. Meet some of the community and find the door in.',
+    'The ZAO is a decentralized impact network - artists, builders, and creators who ship together and own their work. Meet some of the community and find the door in.',
   openGraph: {
     title: 'Community - The ZAO',
     description: 'Artists, builders, and creators who ship together and own their work.',

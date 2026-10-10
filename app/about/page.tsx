@@ -38,8 +38,9 @@ export default function About() {
               A home where music gets built and owned.
             </h1>
             <p className="max-w-2xl text-lg leading-relaxed sm:text-xl" style={{ color: 'var(--zao-text)' }}>
-              The ZAO is a web3 music community and incubator - a home where members build,
-              ship, and graduate real products together.
+              The ZAO (ZTalent Artist Organization) is a decentralized impact network - a home
+              where members build, ship, and graduate real products together, and where artists
+              keep their margin, their data, and their IP.
             </p>
           </div>
         </Container>
