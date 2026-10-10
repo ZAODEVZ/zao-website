@@ -22,7 +22,7 @@ export default async function Home() {
         <Container>
           <div className="space-y-6 sm:space-y-8">
             <p className="text-xs font-medium uppercase tracking-[0.18em]" style={{ color: 'var(--zao-cream)' }}>
-              Web3 music community & incubator
+              A decentralized impact network for artists
             </p>
             <h1 className="max-w-3xl text-4xl font-bold leading-tight sm:text-6xl">
               A home where artists own their work.
