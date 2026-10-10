@@ -32,7 +32,6 @@ export const ICM_BOXES: IcmBox[] = [
   { slug: 'coc-concertz', id: 'icm_PmXTIAro8llyOv9LCJ-LZw', name: 'COC Concertz', blurb: 'Virtual concert promotion and artist showcasing.', group: 'product' },
   { slug: 'zuke', id: 'icm_RF7Y6H1bkbn5NujhB2pI0A', name: 'Zuke (ZAO Spaces)', blurb: 'Live audio rooms for the ZAO community.', group: 'product' },
   { slug: 'poidh', id: 'icm_1CRn7Oyvee1jDSK9kje7dw', name: 'POIDH @ ZAO', blurb: 'Bounties - pics or it didn’t happen.', group: 'product' },
-  { slug: 'magnetiq', id: 'icm_ObVlvn960SvOLc-W-IV3wQ', name: 'Magnetiq', blurb: 'All-in-one event and launch platform.', group: 'product' },
   { slug: 'channelz', id: 'icm_1u7o73ziv5pAsMmXQdhfiQ', name: 'channelz', blurb: 'A ZAO ecosystem product - see the box for details.', group: 'product' },
   { slug: 'zaolingo', id: 'icm_47k0vjXyDz23p8qi4spyJA', name: 'ZAOlingo', blurb: 'A ZAO ecosystem product - see the box for details.', group: 'product' },
   { slug: 'zaoscout', id: 'icm_DVPpoZoramr8aTwmi6yTaQ', name: 'ZAOscout', blurb: 'A ZAO ecosystem product - see the box for details.', group: 'product' },
