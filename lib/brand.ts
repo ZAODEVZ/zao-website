@@ -1,17 +1,20 @@
 // The ZAO brand reference, sourced from the zaobrand repo (canon/, voice/, visual/,
 // hierarchy/). Kept in ZAO voice. Numbers are deliberately omitted (they drift).
+// Descriptor follows The ZAO context box (bettercallzaal/zao-icm boxes/thezao.llm.txt),
+// the fact source Zaal named on 2026-10-10: an impact network, not a music community.
 
 export const WHAT_IS = {
   oneLine:
-    'The ZAO is a web3 music community and incubator - a home where members build, ship, and graduate real products together.',
+    'The ZAO is a decentralized impact network that brings the profit margin, data and IP rights back to artists. Music first, community second, technology third.',
   longer:
-    'It started as a gated Farcaster social client for its own community and grew into a lab. Members prototype ecosystem projects side by side; when a project is ready for production and new users, it graduates to its own repo and home. The community operates like a label and an incubator at once.',
+    'ZAO stands for ZTalent Artist Organization; what it is today is a decentralized impact network whose first artist domain is music. It started as a gated Farcaster social client for its own community and grew into a lab, ZAO OS, where members prototype side by side; when a project is ready for production and new users, it graduates to its own repo and home. It governs itself with a weekly Fractal and a soulbound Respect token on Optimism: a vote you earn, not one you buy.',
   is: [
-    'A community first - a home for a specific group of people, member-owned in spirit.',
+    'An impact network first - a home for a specific group of people, member-owned in spirit, governed by contribution, not capital.',
     'A place that ships - real products, built in public, that leave the nest when ready.',
     'Web3-native and music-rooted, but not limited to either.',
   ],
   isNot: [
+    'Not a record label, and not a music community in the social-club sense.',
     'Not a platform play chasing generic scale.',
     'Not a token-first project - the community and the work come before any token.',
     'Not a single app - it is an umbrella over many builds.',
@@ -19,18 +22,18 @@ export const WHAT_IS = {
 }
 
 export const BOILERPLATE = {
-  oneLiner: 'The ZAO is a web3 music community and incubator where artists own their work.',
+  oneLiner: 'The ZAO is a decentralized impact network that returns profit margin, data and IP rights to artists.',
   short:
-    'The ZAO is a web3 music community and incubator, founded in 2024. It is a home where members build, ship, and graduate real products together - and where artists keep their margin, their data, and their IP. Built on Farcaster and Base.',
+    'The ZAO is a decentralized impact network, founded in 2024, that brings the profit margin, data and IP rights back to artists. Music first, community second, technology third. Members build, ship, and graduate real products together, and govern with a vote they earn. Built in the open on Farcaster, Optimism and Base.',
   medium:
-    'The ZAO is a web3 music community and incubator, founded in 2024. It started as a gated social client for its own community and grew into a lab: members prototype projects side by side, and when something is ready it graduates to its own home. It runs like a label and an incubator at once. Everything it builds - from on-chain music battles to festivals - serves one idea: artists owning their work.',
+    'The ZAO is a decentralized impact network, founded in 2024, that brings the profit margin, data and IP rights back to artists. It started as a gated social client for its own community and grew into a lab: members prototype projects side by side, and when something is ready it graduates to its own home. It governs itself with a weekly Fractal and soulbound Respect, a vote you earn. Everything it builds - from live-traded music battles to festivals - serves one idea: artists owning their margin, their data and their IP.',
   taglines: [
     'A home where artists own their work.',
     'Build, ship, graduate - together.',
     'Music, owned by the people who make it.',
   ],
   bios: [
-    'The ZAO - a web3 music community and incubator. Artists own their work. Built on Farcaster + Base.',
+    'The ZAO - a decentralized impact network for artists. Profit margin, data and IP rights, back to the people who make the music.',
     'Building the home where artists keep their margin, data, and IP.',
   ],
 }
@@ -45,14 +48,11 @@ export const GLOSSARY: { correct: string; wrong: string; note: string }[] = [
   { correct: 'ZOE', wrong: 'Zoe, zoe', note: 'All caps. The ecosystem orchestrator.' },
   { correct: 'ZOLs', wrong: 'Zols, ZOL', note: 'ZAO contribution credits.' },
   { correct: 'ZOUNZ', wrong: 'Zounz, zounz', note: 'All caps.' },
-  { correct: 'SongJam', wrong: 'Songjam, Song Jam', note: 'CamelCase.' },
-  { correct: 'SANG', wrong: 'Sang, sang', note: "All caps. SongJam's token." },
   { correct: 'FISHBOWLZ', wrong: 'Fishbowlz, FishBowlz', note: 'All caps. Paused.' },
   { correct: 'Huöttöja', wrong: 'Waha, Huottoja', note: "Community's own spelling, with umlauts." },
   { correct: 'JANGOUU FOREVER', wrong: 'Jango, Jangouu', note: 'Artist. Pronounced "Jango Double U".' },
-  { correct: 'Joseph Goats', wrong: 'Jose Goats, Jose', note: 'Rebranded from Jose.' },
+  { correct: 'Joseph Goats', wrong: 'Jose Goats', note: 'Artist name. His real name is Jose; use Joseph Goats for the artist and never autocorrect Jose.' },
   { correct: 'Tom Fellenz', wrong: 'Fellenz', note: 'Full name or just Fellenz.' },
-  { correct: 'Magnetiq', wrong: 'Magnetic, MagnetIQ', note: 'Event/launch platform at magnetiq.io.' },
   { correct: 'Stilo World', wrong: 'StiloWorld, stilo world', note: 'Two words, capitalized.' },
   { correct: 'Thy Revolution', wrong: 'The Revolution', note: '"Thy", not "The".' },
   { correct: 'ArDrive', wrong: 'Ardrive, ar drive', note: 'CamelCase.' },

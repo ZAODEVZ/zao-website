@@ -38,8 +38,8 @@ export default function About() {
               A home where music gets built and owned.
             </h1>
             <p className="max-w-2xl text-lg leading-relaxed sm:text-xl" style={{ color: 'var(--zao-text)' }}>
-              The ZAO is a web3 music community and incubator - a home where members build,
-              ship, and graduate real products together.
+              The ZAO is a decentralized impact network that brings the profit margin, data and IP
+              rights back to artists - a home where members build, ship, and graduate real products together.
             </p>
           </div>
         </Container>
