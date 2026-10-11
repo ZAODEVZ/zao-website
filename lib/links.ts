@@ -1,7 +1,9 @@
 // Every public surface in the ZAO ecosystem, for the reveal.
 //
-// Every URL here was fetched and returned HTTP 200 on 2026-10-11 (24 of 24,
-// including the five added that day on Zaal's 2026-09-21 ruling). Two URLs from
+// Every URL here was fetched and returned HTTP 200 on 2026-10-11 (23 of 23,
+// including the five added that day on Zaal's 2026-09-21 ruling). Zlank is
+// linked at zlank.vercel.app because zlank.online refused connections on port
+// 443 that day; move the row back when the domain serves HTTPS. Two URLs from
 // notes/socials-map.md are deliberately NOT here because they do not resolve at
 // all (connection failure, not a 404): loanz.zao.lol and studentloanz.xyz. A
 // reveal page with dead links on it is worse than a shorter one.
@@ -42,7 +44,7 @@ export const LINK_GROUPS: LinkGroup[] = [
       { name: 'ZAO OS', blurb: 'The lab where ecosystem projects get built before they graduate.', href: 'https://zaoos.com' },
       { name: 'ZABAL Gamez', blurb: 'The build-a-thon program - artists and builders shipping together.', href: 'https://zabalgamez.com' },
       { name: 'FISHBOWLZ', blurb: 'Open conversations, in public, on the record.', href: 'https://www.fishbowlz.com' },
-      { name: 'Zlank', blurb: 'A no-code builder for Farcaster Snaps, built in the ZAO ecosystem - make and share interactive Snaps in the feed.', href: 'https://zlank.online' },
+      { name: 'Zlank', blurb: 'A no-code builder for Farcaster Snaps, built in the ZAO ecosystem - make and share interactive Snaps in the feed.', href: 'https://zlank.vercel.app' },
     ],
   },
   {
