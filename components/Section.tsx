@@ -21,7 +21,7 @@ export function Section({
       <Container>
         {eyebrow ? (
           <p
-            className="mb-4 text-xs font-medium uppercase tracking-[0.18em]"
+            className="zao-eyebrow mb-4 text-xs font-medium uppercase tracking-[0.18em]"
             style={{ color: 'var(--zao-cream)' }}
           >
             {eyebrow}

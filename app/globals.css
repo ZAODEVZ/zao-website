@@ -81,3 +81,124 @@
     }
   }
 }
+
+/*
+  Pieces ported from IMan's own redesign of thezao.com (ZAODEVZ/thezao.com-iman-ui,
+  index.html at 4013077), card 9407. Designed by IMan; carried over by hand into
+  these tokens. Hand-written CSS only, no generated imagery.
+*/
+
+/* Keyboard focus ring (IMan's redesign: .btn:focus-visible) */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--zao-cream);
+  outline-offset: 2px;
+}
+
+/* Eyebrow with a gold dot (IMan's redesign: .eyebrow) */
+.zao-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.zao-eyebrow::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--zao-cream);
+  box-shadow: 0 0 0 3px var(--zao-panel-hover);
+}
+
+/* Hero record and equalizer (IMan's redesign: .hero-visual, .vinyl, .eq) */
+.zao-hero-visual {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zao-hero-visual .zao-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(200px 200px at 50% 50%, rgba(245, 197, 24, 0.22), transparent 70%);
+  filter: blur(8px);
+}
+.zao-vinyl {
+  position: absolute;
+  right: 6%;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background:
+    repeating-radial-gradient(circle at 50% 50%, rgba(234, 240, 248, 0.09) 0 1px, transparent 1px 6px),
+    radial-gradient(circle at 42% 38%, #16324f, #071426 70%);
+  border: 1px solid rgba(234, 240, 248, 0.18);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6);
+  animation: zao-spin 14s linear infinite;
+}
+.zao-vinyl::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #ffdf7e, var(--zao-cream) 55%, #8a5f06 100%);
+  box-shadow: 0 0 0 6px rgba(3, 24, 47, 0.9);
+}
+.zao-eq {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 140px;
+}
+.zao-eq i {
+  display: block;
+  width: 12px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, var(--zao-cream), rgba(245, 197, 24, 0.25));
+  animation: zao-eq 2.4s ease-in-out infinite;
+}
+.zao-eq i:nth-child(1) { height: 40%; animation-delay: -2.1s; }
+.zao-eq i:nth-child(2) { height: 70%; animation-delay: -1.7s; }
+.zao-eq i:nth-child(3) { height: 100%; animation-delay: -1.3s; }
+.zao-eq i:nth-child(4) { height: 55%; animation-delay: -0.9s; }
+.zao-eq i:nth-child(5) { height: 85%; animation-delay: -0.5s; }
+.zao-eq i:nth-child(6) { height: 35%; animation-delay: -0.2s; }
+.zao-eq i:nth-child(7) { height: 65%; animation-delay: -2.5s; }
+@media (min-width: 1024px) {
+  .zao-hero-visual { height: 360px; }
+  .zao-vinyl { width: 230px; height: 230px; }
+  .zao-vinyl::after { width: 64px; height: 64px; }
+  .zao-eq { height: 200px; }
+  .zao-eq i { width: 14px; }
+}
+@keyframes zao-spin { to { transform: rotate(360deg); } }
+@keyframes zao-eq { 0%, 100% { transform: scaleY(0.35); } 50% { transform: scaleY(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .zao-vinyl,
+  .zao-eq i { animation: none; }
+}
+
+/* Leaderboard rank badges (IMan's redesign: .rank.r1-.r3) */
+.zao-rank {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-weight: 800;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  background: var(--zao-dark);
+  color: var(--zao-cream-dim);
+  border: 1px solid rgba(234, 240, 248, 0.18);
+}
+.zao-rank-1 { background: var(--zao-cream); color: var(--zao-dark); border-color: var(--zao-cream); }
+.zao-rank-2 { background: rgba(234, 240, 248, 0.18); color: var(--zao-text); }
+.zao-rank-3 { background: rgba(225, 140, 60, 0.28); color: #ffd9ad; }
