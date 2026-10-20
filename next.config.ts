@@ -40,6 +40,14 @@ const nextConfig: NextConfig = {
       { source: '/blog-categories/single', destination: '/community', permanent: false },
       { source: '/blog-categories/video', destination: '/community', permanent: false },
       { source: '/oldpages/music-releases', destination: '/music-releases', permanent: false },
+
+      // Webflow answers both with a 301 today, measured 2026-10-20 with curl on
+      // www.thezao.com: /contact -> /join -> /zao-token. Same final page and the
+      // same permanence here, minus the extra hop. They were missing from the
+      // recorded URL list because a 301 is not a page, so they 404ed on the
+      // rebuild until IMan's review caught it (iman-desk #106).
+      { source: '/contact', destination: '/zao-token', permanent: true },
+      { source: '/join', destination: '/zao-token', permanent: true },
       ...WEBFLOW_MEMBERS.map((m) => ({
         source: `/artists/${m.slug}`,
         destination: `/community/${m.slug}`,

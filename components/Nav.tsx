@@ -2,10 +2,11 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Container } from './Container'
 import { NAV_LINKS } from '@/lib/constants'
+import { MobileMenu } from './MobileMenu'
 
 export function Nav() {
   return (
-    <nav className="py-5" style={{ borderBottom: '1px solid var(--zao-border)' }}>
+    <nav className="relative py-5" style={{ borderBottom: '1px solid var(--zao-border)' }}>
       <Container className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3" aria-label="The ZAO home">
           <Image
@@ -33,6 +34,7 @@ export function Nav() {
             </Link>
           ))}
         </div>
+        <MobileMenu />
       </Container>
     </nav>
   )
