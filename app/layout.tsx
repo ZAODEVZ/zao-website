@@ -18,8 +18,10 @@ export const metadata: Metadata = {
     siteName: 'The ZAO',
     images: [
       {
-        // Absolute vercel.app URL so the preview works while thezao.com still points to the old site (pre-DNS-switch).
-        url: 'https://zao-website.vercel.app/og-image.png',
+        // Absolute thezao.com URL (IMan review, iman-desk #106): shares show the real domain, and
+        // vercel.app does not load from Zambia. public/og-image.png is served at this path once DNS
+        // moves; until then a preview of the rebuild shows no image, because Webflow 404s it.
+        url: 'https://thezao.com/og-image.png',
         width: 1200,
         height: 630,
         alt: 'The ZAO - a home where artists own their work',
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'The ZAO - a home where artists own their work',
     description: 'A decentralized impact network. Live-traded music, governance you earn, built in the open.',
-    images: ['https://zao-website.vercel.app/og-image.png'],
+    images: ['https://thezao.com/og-image.png'],
   },
   icons: {
     icon: [{ url: '/favicon-32.png', sizes: '32x32', type: 'image/png' }],

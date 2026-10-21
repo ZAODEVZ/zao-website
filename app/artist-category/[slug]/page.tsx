@@ -37,7 +37,7 @@ export async function generateMetadata({
       url: `https://thezao.com/artist-category/${category.slug}`,
       siteName: 'The ZAO',
       type: 'website',
-      images: ['https://zao-website.vercel.app/og-image.png'],
+      images: ['https://thezao.com/og-image.png'],
     },
   }
 }

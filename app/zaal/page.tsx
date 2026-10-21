@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     url: 'https://thezao.com/zaal',
     siteName: 'The ZAO',
     type: 'profile',
-    images: ['https://zao-website.vercel.app/og-image.png'],
+    images: ['https://thezao.com/og-image.png'],
   },
 }
 

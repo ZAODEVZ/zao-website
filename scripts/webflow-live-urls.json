@@ -2,7 +2,7 @@
  "_comment": "Every URL live on the Webflow thezao.com as of 2026-09-08. The replacement must resolve or redirect every one of them or inbound links break at cutover. 56 were found by crawling the site's own links; 25 more are linked from NOWHERE and were found via the Wayback CDX index - which is why this list is recorded rather than re-derived by crawling.",
  "_recheck": "2026-09-15, and before the Webflow plan is cancelled - after that the source of truth is gone.",
  "_source": "crawl of the mirror + web.archive.org CDX, each probed live",
- "count": 81,
+ "count": 83,
  "urls": [
   "/",
   "/about",
@@ -84,6 +84,9 @@
   "/nexus",
   "/oldpages/music-releases",
   "/zao-leaderboard",
-  "/zao-token"
- ]
+  "/zao-token",
+  "/contact",
+  "/join"
+ ],
+ "_added_2026_10_20": "/contact and /join: Webflow 301s, not pages, so the crawl and the CDX probe both missed them. Both end at /zao-token on Webflow. Found by IMan's cutover review (iman-desk #106)."
 }

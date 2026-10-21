@@ -66,7 +66,8 @@ async function body(path) {
 }
 
 // ---------------------------------------------------------------- check 1
-// Every page in the sitemap must carry an og:image.
+// Every page in the sitemap must carry an og:image, served from the real domain.
+const OG_ORIGIN = 'https://thezao.com'
 async function checkOgImages(routes) {
   let checked = 0
   for (const path of routes) {
@@ -76,10 +77,18 @@ async function checkOgImages(routes) {
       continue
     }
     checked++
-    const hasOg =
-      /<meta[^>]+property="og:image"[^>]+content="[^"]+"/.test(html) ||
-      /<meta[^>]+content="[^"]+"[^>]+property="og:image"/.test(html)
-    if (!hasOg) {
+    const og =
+      html.match(/<meta[^>]+property="og:image"[^>]+content="([^"]+)"/) ||
+      html.match(/<meta[^>]+content="([^"]+)"[^>]+property="og:image"/)
+    if (og && !og[1].startsWith(OG_ORIGIN + '/')) {
+      fail(
+        'og:image',
+        `${path} shares ${og[1]}, not an image on ${OG_ORIGIN}. 25 pages shipped ` +
+          `pointing at zao-website.vercel.app, which shows the wrong domain on ` +
+          `every share and does not load from Zambia.`,
+      )
+    }
+    if (!og) {
       fail(
         'og:image',
         `${path} has NO og:image. A page that defines its own openGraph block ` +
