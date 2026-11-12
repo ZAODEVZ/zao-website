@@ -13,7 +13,10 @@ import {
   type Origin,
 } from '@/lib/communityActivity'
 
-type Sort = 'active' | 'az'
+// Default order is by where people came in (Tom Fellenz, ZAO Festivals chat 12 Nov: keep
+// festival performers, WaveWarZ and friends apart; Zaal: "we should default organize by
+// this"). A member with more than one door sits under the first one in ORIGINS order.
+type Sort = 'origin' | 'active' | 'az'
 
 const chipBase = 'rounded-full px-3 py-1 text-xs font-medium transition-all hover:scale-[1.03] sm:text-sm'
 
@@ -58,7 +61,7 @@ function FilterRow({ label, children }: { label: string; children: React.ReactNo
 }
 
 export function CommunityDirectory({ members }: { members: WebflowMember[] }) {
-  const [sort, setSort] = useState<Sort>('active')
+  const [sort, setSort] = useState<Sort>('origin')
   const [role, setRole] = useState<string | null>(null)
   const [group, setGroup] = useState<ActivityGroup | null>(null)
   const [origin, setOrigin] = useState<Origin | null>(null)
@@ -81,19 +84,30 @@ export function CommunityDirectory({ members }: { members: WebflowMember[] }) {
 
   const az = (a: WebflowMember, b: WebflowMember) => a.name.localeCompare(b.name, 'en', { sensitivity: 'base' })
 
-  const sections: { key: ActivityGroup | 'all'; title: string; sub?: string; items: WebflowMember[] }[] =
+  const byActivity = (a: WebflowMember, b: WebflowMember) => {
+    const d = activityFor(b.slug).score - activityFor(a.slug).score
+    return d !== 0 ? d : az(a, b)
+  }
+  const homeOrigin = (m: WebflowMember): Origin =>
+    ORIGINS.map((o) => o.key).find((k) => activityFor(m.slug).origins.includes(k)) ?? 'friends'
+
+  const sections: { key: string; title: string; sub?: string; items: WebflowMember[] }[] =
     sort === 'az'
       ? [{ key: 'all', title: '', items: [...filtered].sort(az) }]
+      : sort === 'origin'
+      ? ORIGINS.map((o) => ({
+          key: o.key,
+          title: o.key === 'festivals' ? 'ZAO Festivals performers' : o.title,
+          sub: o.key === 'friends' ? 'came in through the ZAO itself' : 'most active first',
+          items: filtered.filter((m) => homeOrigin(m) === o.key).sort(byActivity),
+        })).filter((s) => s.items.length > 0)
       : ACTIVITY_GROUPS.map((g) => ({
           key: g.key,
           title: g.title,
           sub: g.sub,
           items: filtered
             .filter((m) => activityGroup(activityFor(m.slug)) === g.key)
-            .sort((a, b) => {
-              const d = activityFor(b.slug).score - activityFor(a.slug).score
-              return d !== 0 ? d : az(a, b)
-            }),
+            .sort(byActivity),
         })).filter((s) => s.items.length > 0)
 
   const anyFilter = role !== null || group !== null || origin !== null
@@ -102,6 +116,9 @@ export function CommunityDirectory({ members }: { members: WebflowMember[] }) {
     <div className="space-y-8">
       <div className="space-y-3 rounded p-4 sm:p-5" style={{ border: '1px solid var(--zao-border)' }}>
         <FilterRow label="Order">
+          <Chip on={sort === 'origin'} onClick={() => setSort('origin')}>
+            Where they came in
+          </Chip>
           <Chip on={sort === 'active'} onClick={() => setSort('active')}>
             Most active
           </Chip>
