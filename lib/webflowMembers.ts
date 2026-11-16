@@ -12,6 +12,9 @@
 //
 // Added after the carry-over, not from Webflow:
 //   iman-afrikah (2026-10-23): bio is his X bio, photo is his X profile picture.
+//   the-crown-vics, open-x, grass-rug, michael-anderson, lyonsden (2026-11-16): the
+//   ZAOstock 2026 acts not yet listed. Bio and links are their own words from the
+//   zaostock.com lineup (lineup-fallback.ts, read 2026-09-23); photos from zaostock.com/artists.
 
 // LINK AUDIT - 2026-09-07. All 183 outbound links below were fetched. 170 returned
 // 200. The 13 that did not are listed here rather than silently deleted: these are
@@ -408,6 +411,69 @@ const ALL_WEBFLOW_MEMBERS: WebflowMember[] = [
     bio: [
       'IAmThanos Graduated From the School of Hard Knocks.',
       'He is a Father First, Battler, and Recording Artist just looking to resonate with the people who miss the golden era.',
+    ],
+    socials: [],
+  },
+  {
+    slug: 'the-crown-vics',
+    name: 'The Crown Vics',
+    category: 'Musician',
+    website: null,
+    photo: '/members/the-crown-vics.webp',
+    photoCredit: { by: 'The Crown Vics', source: 'ZAOstock 2026 lineup', url: 'https://zaostock.com' },
+    bio: [
+      'The Crown Vics are Maine\'s premier rock \'n\' roll dance band. Built on the bones of rockabilly, boogie woogie, and honky tonk, twisted through classic rock, Americana, indie, and whatever else catches their ear. They\'ve played everywhere from Portland to Halifax, from ski resorts to theaters, from corporate events to bar stages. No long solos. No slow fades. Hardly a breath between numbers. Every night is a show. Every show is an experience.',
+    ],
+    socials: [{ label: 'Facebook', url: 'https://facebook.com/TheCrownVics' }, { label: 'ReverbNation', url: 'https://reverbnation.com/thecrownvics' }],
+  },
+  {
+    slug: 'open-x',
+    name: 'OPEN X',
+    category: 'Musician',
+    website: 'https://openxofficial.com',
+    photo: '/members/open-x.webp',
+    photoCredit: { by: 'OPEN X', source: 'ZAOstock 2026 lineup', url: 'https://zaostock.com' },
+    bio: [
+      'OPEN X is best described as a bombastic, genre-blurring American rock power pop trio known for their cinematic sound, classical influences, and spectacular stadium-sized live shows. While rooted in alternative rock, OPEN X seamlessly blends progressive rock, heavy metal, and modern pop. They are famous for thick, heavy guitar riffs contrasted against delicate vocal melodies. A massive part of their identity is Ryan Miller\'s dramatic, soaring and emotional vocal delivery. Despite having only three members, they produce an incredibly dense, symphonic wall of sound, anchored by driving basslines and precise, hard-hitting percussion.',
+    ],
+    socials: [],
+  },
+  {
+    slug: 'grass-rug',
+    name: 'Grass Rug',
+    category: 'Musician',
+    website: null,
+    photo: '/members/grass-rug.webp',
+    photoCredit: { by: 'Grass Rug', source: 'ZAOstock 2026 lineup', url: 'https://zaostock.com' },
+    bio: [
+      'Grass Rug is a rock band from Portland, Maine, known for their indie jam-rock sound. Formed in 2025, the group consists of vocalist and rhythm guitarist Sam Mitchell, lead guitarist Jack Howianec, rhythm guitarist Jacob Mitchell, bassist Donny Bowman, and drummer Peter Coleman. Grass Rug is heavily inspired by psychedelic 60s and 70s rock, as well as 90s alternative rock and 2010s indie. Grass Rug delivers unforgettable improvisational live performances, drawing audiences in southern, central, and downeast Maine.',
+    ],
+    socials: [],
+  },
+  {
+    slug: 'michael-anderson',
+    name: 'Michael Anderson',
+    category: 'Musician',
+    website: null,
+    photo: '/members/michael-anderson.webp',
+    photoCredit: { by: 'Michael Anderson', source: 'ZAOstock 2026 lineup', url: 'https://zaostock.com' },
+    bio: [
+      'Michael has a deep background linking an outstanding voice with clever keyboard performance. He is at home as a solo act, delivering a very full sound, or in the numerous bands he has performed with. A resident of Bar Harbor with roots in blues, soul, and jazz, he is at home performing jazz standards as well as popular hits. "I find it very important to connect with my audience." More than just a musician, he delivers a riveting performance that engages his audience. As a student of jazz and a lifetime love of music, he delivers a memorable sound.',
+    ],
+    socials: [],
+  },
+  {
+    slug: 'lyonsden',
+    name: 'LyonsDen',
+    category: 'Musician',
+    website: null,
+    photo: '/members/lyonsden.webp',
+    photoCredit: { by: 'LyonsDen', source: 'ZAOstock 2026 lineup', url: 'https://zaostock.com' },
+    bio: [
+      'LyonsDen Rez Muzik is a Native American, self-produced independent artist from the Onondaga Reservation, carving out a lane where reggae roots, hip-hop grit, blues soul, R&B melodies, and EDM energy collide. Blending uplifting island vibes with raw Rez storytelling, LyonsDen delivers music that\'s both healing and hard-hitting - a soundtrack for resilience, love, laughter, and leveling up.',
+      'Emerging from the SouthEnd with a mission bigger than music, LyonsDen Rez Muzik has steadily built momentum through authentic storytelling and grassroots hustle. After releasing multiple singles and the EP "Tales From SouthEnd," the movement expanded with the debut album "The SouthEnd Kid," showcasing growth, vulnerability, and undeniable versatility. From romantic anthems to humorous Rez punchline records to deeply reflective tracks about overcoming adversity, LyonsDen\'s catalog reflects real life on the reservation - unfiltered and unapologetic.',
+      'The live energy matches the message. LyonsDen Rez Muzik earned a spot at SXSW after winning a Battle of the Bands and later joined the Beyond The Block Tour, proving the sound translates far beyond the Rez. International collaborations with artists from the Netherlands and Belgium, along with multiple YouTube reaction features, continue to grow a global audience.',
+      'More than just music, LyonsDen Rez Muzik represents independent spirit - writing, recording, and producing with a DIY ethic that inspires other Native artists to own their narratives. With infectious hooks, clever wordplay, and an unmistakable vibe, LyonsDen Rez Muzik is turning personal trials into powerful triumphs - one track at a time.',
     ],
     socials: [],
   },
