@@ -75,6 +75,11 @@ const COC7: Show = { name: 'CoC ConcertZ 7', date: '2026-07-18' }
 
 const SHOWS: Record<string, Show[]> = {
   'dcoop': [ZAOSTOCK],
+  'the-crown-vics': [ZAOSTOCK],
+  'open-x': [ZAOSTOCK],
+  'grass-rug': [ZAOSTOCK],
+  'michael-anderson': [ZAOSTOCK],
+  'lyonsden': [ZAOSTOCK],
   'fellenz': [ZAOSTOCK, COC4],
   'joseph-goats': [COC4],
   'stilo': [COC4, COC7],
