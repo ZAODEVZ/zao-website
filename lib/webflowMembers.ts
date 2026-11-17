@@ -504,7 +504,7 @@ const ALL_WEBFLOW_MEMBERS: WebflowMember[] = [
     bio: [
       'In 2020 I was hit with the original Covid Virus, I was hospitalized & intubated, died twice, still kicking. Unfortunately the damage done, caused a voice change & I had to relearn how to sing with a scarred deeper voice.I became a hybrid Ai musician.',
     ],
-    socials: [{ label: 'Audius', url: 'https://audius.co/Stormbourne' }, { label: 'X', url: 'https://x.com/Stormbourne_76' }],
+    socials: [{ label: 'Audius', url: 'https://audius.co/Stormbourne' }, { label: 'Instagram', url: 'https://www.instagram.com/Stormbourne76' }],
   },
   {
     slug: 'luiwrites',
@@ -547,13 +547,13 @@ const ALL_WEBFLOW_MEMBERS: WebflowMember[] = [
     slug: 'aporkalypse78',
     name: 'AporkALYPSE Now',
     category: 'Musician',
-    website: 'https://baconbangers.link',
+    website: null,
     photo: '/members/aporkalypse78.jpg',
     photoCredit: { by: 'AporkALYPSE Now', source: 'Audius', url: 'https://audius.co/AporkALYPSE78' },
     bio: [
       'Founder of BACON BANGERS, Producer, Content Creator, Digital artist, and Facilitator of Collabs.',
     ],
-    socials: [{ label: 'Audius', url: 'https://audius.co/AporkALYPSE78' }, { label: 'X', url: 'https://x.com/Aporkalypse78' }],
+    socials: [{ label: 'Audius', url: 'https://audius.co/AporkALYPSE78' }, { label: 'X', url: 'https://x.com/Aporkalypse78' }, { label: 'Instagram', url: 'https://www.instagram.com/aporkalypsenow78' }],
   },
   {
     slug: 'geekmyth',
@@ -682,13 +682,13 @@ const ALL_WEBFLOW_MEMBERS: WebflowMember[] = [
     slug: 'ozthecryptogoat',
     name: 'ozthecryptogoat',
     category: 'Musician',
-    website: 'https://cryptorev.llc',
+    website: null,
     photo: '/members/ozthecryptogoat.jpg',
     photoCredit: { by: 'ozthecryptogoat', source: 'Audius', url: 'https://audius.co/ozthecryptogoat' },
     bio: [
       '$CR Crypto Revolution The First Tokenized AI Music Record Label',
     ],
-    socials: [{ label: 'Audius', url: 'https://audius.co/ozthecryptogoat' }, { label: 'X', url: 'https://x.com/ozthecryptogoat' }],
+    socials: [{ label: 'Audius', url: 'https://audius.co/ozthecryptogoat' }, { label: 'X', url: 'https://x.com/ozthecryptogoat' }, { label: 'Instagram', url: 'https://www.instagram.com/ozthecryptogoat' }],
   },
   {
     slug: 'retrospect',
