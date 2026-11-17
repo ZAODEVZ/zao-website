@@ -451,13 +451,13 @@ const ALL_WEBFLOW_MEMBERS: WebflowMember[] = [
     bio: [
       'Grass Rug is a rock band from Portland, Maine, known for their indie jam-rock sound. Formed in 2025, the group consists of vocalist and rhythm guitarist Sam Mitchell, lead guitarist Jack Howianec, rhythm guitarist Jacob Mitchell, bassist Donny Bowman, and drummer Peter Coleman. Grass Rug is heavily inspired by psychedelic 60s and 70s rock, as well as 90s alternative rock and 2010s indie. Grass Rug delivers unforgettable improvisational live performances, drawing audiences in southern, central, and downeast Maine.',
     ],
-    socials: [],
+    socials: [{ label: 'Instagram', url: 'https://www.instagram.com/grassrugband' }],
   },
   {
     slug: 'michael-anderson',
     name: 'Michael Anderson',
     category: 'Musician',
-    website: null,
+    website: 'https://zaostock.com/artist/michael-anderson',
     photo: '/members/michael-anderson.webp',
     photoCredit: { by: 'Michael Anderson', source: 'ZAOstock 2026 lineup', url: 'https://zaostock.com' },
     bio: [
@@ -478,7 +478,7 @@ const ALL_WEBFLOW_MEMBERS: WebflowMember[] = [
       'The live energy matches the message. LyonsDen Rez Muzik earned a spot at SXSW after winning a Battle of the Bands and later joined the Beyond The Block Tour, proving the sound translates far beyond the Rez. International collaborations with artists from the Netherlands and Belgium, along with multiple YouTube reaction features, continue to grow a global audience.',
       'More than just music, LyonsDen Rez Muzik represents independent spirit - writing, recording, and producing with a DIY ethic that inspires other Native artists to own their narratives. With infectious hooks, clever wordplay, and an unmistakable vibe, LyonsDen Rez Muzik is turning personal trials into powerful triumphs - one track at a time.',
     ],
-    socials: [],
+    socials: [{ label: 'Instagram', url: 'https://www.instagram.com/lyonsden_rez_muzik' }],
   },
   {
     slug: 'shawnsporter',
