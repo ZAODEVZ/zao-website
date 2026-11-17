@@ -33,6 +33,7 @@ export const NAV_LINKS = [
   { label: 'AI Tools', href: '/ai' },
   { label: 'Links', href: '/links' },
   { label: 'About', href: '/about' },
+  { label: 'Press', href: '/press' },
   { label: 'Token', href: '/zao-token' },
 ] as const
 

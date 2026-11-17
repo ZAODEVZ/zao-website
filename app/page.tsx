@@ -10,6 +10,7 @@ import { getWaveWarZStats, getTopArtists, fmtNum } from '@/lib/wavewarz'
 import { BrandDoors } from '@/components/BrandDoors'
 import { RoomRings } from '@/components/room/RoomRings'
 import { getPulses } from '@/lib/frontdoor'
+import { STORY } from '@/lib/press'
 
 // The Room (concept C, PR 70) is the homepage. This is a proposal: it waits on Zaal and on
 // Brian (design lead) before it ships. Copy is limited to what is already on the live site
@@ -73,6 +74,33 @@ export default async function Home() {
           </Button>
           <Button href="/zao-leaderboard" variant="secondary">
             How Respect works
+          </Button>
+        </div>
+      </section>
+
+      {/* The story so far, as a numbered path, each step linked to its proof (Zaal, 17 Nov,
+          from the attabotty.art review, ZAOresearch doc 2506). */}
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-8" style={{ borderTop: '1px solid var(--zao-border)' }}>
+        <p className="zao-eyebrow text-xs font-medium uppercase tracking-[0.18em]" style={{ color: 'var(--zao-cream)' }}>
+          The story so far
+        </p>
+        <ol className="mt-8 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          {STORY.map((s) => (
+            <li key={s.step}>
+              <p className="text-sm tabular-nums" style={{ color: 'var(--zao-cream-dim)' }}>
+                {s.step} / {String(STORY.length).padStart(2, '0')}
+              </p>
+              <p className={`${serif.className} mt-2 text-2xl`}>{s.title}</p>
+              <p className="mt-2 leading-relaxed" style={{ color: 'var(--zao-cream-dim)' }}>{s.body}</p>
+              <a href={s.href} target="_blank" rel="noreferrer" className="mt-3 inline-block text-sm underline" style={{ color: 'var(--zao-cream)' }}>
+                {s.proof}
+              </a>
+            </li>
+          ))}
+        </ol>
+        <div className="mt-10">
+          <Button href="/press" variant="secondary">
+            Press, with proof
           </Button>
         </div>
       </section>
