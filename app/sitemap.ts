@@ -18,6 +18,7 @@ const ROUTES = [
   '/calendar',
   '/zao-leaderboard',
   '/about',
+  '/press',
   '/zao-token',
   '/zaal',
   '/links',
